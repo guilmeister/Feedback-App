@@ -12,10 +12,21 @@ class SignInViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var rememberSwitch: UISwitch!
+    let uDefault = UserDefaults.standard
     static var userIdentifier : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if (uDefault.object(forKey: "switchState") != nil) {
+            rememberSwitch.isOn = uDefault.bool(forKey: "switchState")
+        }
+        if let userValue = uDefault.value(forKey: "username") as? String {
+            usernameTextField.text = userValue
+        }
+        if let passValue = uDefault.value(forKey: "password") as? String {
+            passwordTextField.text = passValue
+        }
     }
 
     @IBAction func signInButtonClicked(_ sender: Any) {
@@ -46,6 +57,20 @@ class SignInViewController: UIViewController {
             else {
                 print("Sign In Unsuccessful")
             }
+        }
+    }
+    
+    @IBAction func rememberSwitchSwiped(_ sender: Any) {
+        print("Switch Swiped")
+        if (rememberSwitch.isOn) {
+            uDefault.setValue(usernameTextField.text, forKey: "username")
+            uDefault.setValue(passwordTextField.text, forKey: "password")
+            uDefault.setValue(true, forKey: "switchState")
+        }
+        else {
+            uDefault.removeObject(forKey: "username")
+            uDefault.removeObject(forKey: "password")
+            uDefault.setValue(false, forKey: "switchState")
         }
     }
     

@@ -1194,6 +1194,9 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OLI-OS-SLC">
                                 <rect key="frame" x="63" y="278" width="51" height="31"/>
+                                <connections>
+                                    <action selector="rememberSwitchSwiped:" destination="edi-Qi-sjz" eventType="valueChanged" id="E4p-SL-zRd"/>
+                                </connections>
                             </switch>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lD6-Hu-PRA">
                                 <rect key="frame" x="107" y="213" width="200" height="35"/>
@@ -1281,6 +1284,7 @@
                     <navigationItem key="navigationItem" id="GYa-gS-f4C"/>
                     <connections>
                         <outlet property="passwordTextField" destination="lD6-Hu-PRA" id="2jq-gx-2DI"/>
+                        <outlet property="rememberSwitch" destination="OLI-OS-SLC" id="IlG-Te-3Tg"/>
                         <outlet property="usernameTextField" destination="CcA-9q-Pyw" id="U8R-eT-QbU"/>
                     </connections>
                 </viewController>
