@@ -12,6 +12,7 @@ class ResetPasswordViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var newPassTextField: UITextField!
     @IBOutlet weak var repeatPassTextField: UITextField!
+    var resetSuccess : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +34,21 @@ class ResetPasswordViewController: UIViewController {
                     //Checks if new password and repeat password have the same value
                     let dict = ["username" : usernameTextField.text, "password" : newPassTextField.text]
                     DatabaseHelper.inst.resetPass(object: dict as! [String : String])
+                    usernameTextField.text = ""
+                    newPassTextField.text = ""
+                    repeatPassTextField.text = ""
+                    resetSuccess = true
+                    break
                 }
             }
             else {
                 print("No such username found")
             }
+        }
+        if (resetSuccess) {
+            let sBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let signInPage = sBoard.instantiateViewController(identifier: "SignIn") as! SignInViewController
+            present(signInPage, animated: true, completion: nil)
         }
     }
     
@@ -101,5 +112,25 @@ class ResetPasswordViewController: UIViewController {
             return false
         }
         return true
+    }
+    
+    @IBAction func showNewPassword(_ sender: Any) {
+        let passwordSecureState = newPassTextField.isSecureTextEntry
+        if (passwordSecureState) {
+            newPassTextField.isSecureTextEntry = false
+        }
+        else {
+            newPassTextField.isSecureTextEntry = true
+        }
+    }
+    
+    @IBAction func showRepeatPassword(_ sender: Any) {
+        let passwordSecureState = repeatPassTextField.isSecureTextEntry
+        if (passwordSecureState) {
+            repeatPassTextField.isSecureTextEntry = false
+        }
+        else {
+            repeatPassTextField.isSecureTextEntry = true
+        }
     }
 }

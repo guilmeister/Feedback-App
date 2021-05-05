@@ -12,8 +12,10 @@ class SignInViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var rememberLabel: UILabel!
     @IBOutlet weak var rememberSwitch: UISwitch!
     let uDefault = UserDefaults.standard
+    var signInSuccess : Bool = false
     static var userIdentifier : String?
     
     override func viewDidLoad() {
@@ -49,14 +51,20 @@ class SignInViewController: UIViewController {
             if (c.username == usernameTextField.text && c.password == passwordTextField.text) {
                 //Checks if username and password text fields match the values saved in Core Data
                 SignInViewController.userIdentifier = c.username
-                let sBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let homePage = sBoard.instantiateViewController(identifier: "Home") as! HomeViewController
-                present(homePage, animated: true, completion: nil)
+                usernameTextField.text = ""
+                passwordTextField.text = ""
+                signInSuccess = true
                 print("Sign In Successful")
+                break
             }
             else {
                 print("Sign In Unsuccessful")
             }
+        }
+        if (signInSuccess) {
+            let sBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let homePage = sBoard.instantiateViewController(identifier: "Home") as! HomeViewController
+            present(homePage, animated: true, completion: nil)
         }
     }
     
@@ -74,14 +82,14 @@ class SignInViewController: UIViewController {
         }
     }
     
-    @IBAction func facebookSignIn(_ sender: Any) {
-        let facebookLink = SFSafariViewController(url: URL(string: "https://www.facebook.com")!)
-        present(facebookLink, animated: true)
-    }
     
-    @IBAction func twitterSignIn(_ sender: Any) {
-        let twitterLink = SFSafariViewController(url: URL(string: "https://www.twitter.com")!)
-        present(twitterLink, animated: true)
+    @IBAction func showPassword(_ sender: Any) {
+        let passwordSecureState = passwordTextField.isSecureTextEntry
+        if (passwordSecureState) {
+            passwordTextField.isSecureTextEntry = false
+        }
+        else {
+            passwordTextField.isSecureTextEntry = true
+        }
     }
-    
 }

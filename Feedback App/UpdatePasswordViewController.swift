@@ -11,6 +11,7 @@ class UpdatePasswordViewController: UIViewController {
 
     @IBOutlet weak var newPassTextField: UITextField!
     @IBOutlet weak var repeatNewPassTextField: UITextField!
+    var resetSuccess : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,17 @@ class UpdatePasswordViewController: UIViewController {
         if (newPassTextField.text == repeatNewPassTextField.text && validInput) {
             let dict = ["username" : String(SignInViewController.userIdentifier!), "password" : newPassTextField.text!] as [String : Any]
             DatabaseHelper.inst.resetPass(object: dict as! [String : String])
+            newPassTextField.text = ""
+            repeatNewPassTextField.text = ""
+            resetSuccess = true
+            print("Reset Password Success")
+        }
+        if (resetSuccess) {
+            let sBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let accountPage = sBoard.instantiateViewController(identifier: "Account") as! AccountViewController
+            present(accountPage, animated: true, completion: nil)
+            newPassTextField.text = ""
+            repeatNewPassTextField.text = ""
         }
     }
     
@@ -64,5 +76,25 @@ class UpdatePasswordViewController: UIViewController {
             return false
         }
         return true
+    }
+    
+    @IBAction func showNewPassword(_ sender: Any) {
+        let passwordSecureState = newPassTextField.isSecureTextEntry
+        if (passwordSecureState) {
+            newPassTextField.isSecureTextEntry = false
+        }
+        else {
+            newPassTextField.isSecureTextEntry = true
+        }
+    }
+    
+    @IBAction func showRepeatPassword(_ sender: Any) {
+        let passwordSecureState = repeatNewPassTextField.isSecureTextEntry
+        if (passwordSecureState) {
+            repeatNewPassTextField.isSecureTextEntry = false
+        }
+        else {
+            repeatNewPassTextField.isSecureTextEntry = true
+        }
     }
 }

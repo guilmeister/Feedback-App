@@ -18,7 +18,7 @@ class CouponViewController: UIViewController {
     let missingGymSurveyText = "Please complete Gym Survey to avail for this coupon on your account"
     let missingFoodSurveyText = "Please complete Food Survey to avail for this coupon on your account"
     let missingSpaSurveyText = "Please complete Spa Survey to avail for this coupon on your account"
-    let surveyCompleteText = "Survey Completed, thank you and please show this to the front desk to avail this coupon during your next visit"
+    let surveyCompleteText = "Survey Completed, thank you. The coupon code is now available on your account page, show it to the front desk on your next visit"
     
     override func viewDidLoad() {
         super.viewDidLoad()
