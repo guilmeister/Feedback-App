@@ -1730,6 +1730,9 @@
                                     <navigationItem title="Admin Page" id="mSN-MW-Jkk">
                                         <barButtonItem key="leftBarButtonItem" title="Back" image="BackArrowIcon" id="z9A-FL-qPH">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <segue destination="edi-Qi-sjz" kind="show" id="cez-6L-55u"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -2115,7 +2118,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lnc-zc-Jrs"/>
+        <segue reference="cez-6L-55u"/>
         <segue reference="EFV-tH-Rdl"/>
         <segue reference="drt-1r-QoT"/>
     </inferredMetricsTieBreakers>
