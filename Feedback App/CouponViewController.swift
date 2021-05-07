@@ -13,6 +13,10 @@ class CouponViewController: UIViewController {
     @IBOutlet weak var gymLabel: UILabel!
     @IBOutlet weak var foodLabel: UILabel!
     @IBOutlet weak var spaLabel: UILabel!
+    @IBOutlet weak var roomBackgroundImageView: UIImageView!
+    @IBOutlet weak var gymBackgroundImageView: UIImageView!
+    @IBOutlet weak var foodBackgroundImageView: UIImageView!
+    @IBOutlet weak var spaBackgroundImageView: UIImageView!
     let customer = DatabaseHelper.inst.fetchUsernameSpecifiedData(username: SignInViewController.userIdentifier!)
     let missingRoomSurveyText = "Please complete Room Survey to avail for this coupon on your account"
     let missingGymSurveyText = "Please complete Gym Survey to avail for this coupon on your account"
@@ -22,6 +26,34 @@ class CouponViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLabelBorders()
+        setLabelData()
+    }
+    
+    func setupLabelBorders() {
+        //Setup Room Background
+        roomBackgroundImageView.layer.cornerRadius = 10.0
+        roomBackgroundImageView.clipsToBounds = true
+        roomBackgroundImageView.layer.borderColor = UIColor.black.cgColor
+        roomBackgroundImageView.layer.borderWidth = 1.0
+        //Setup Gym Background
+        gymBackgroundImageView.layer.cornerRadius = 10.0
+        gymBackgroundImageView.clipsToBounds = true
+        gymBackgroundImageView.layer.borderColor = UIColor.black.cgColor
+        gymBackgroundImageView.layer.borderWidth = 1.0
+        //Setup Food Background
+        foodBackgroundImageView.layer.cornerRadius = 10.0
+        foodBackgroundImageView.clipsToBounds = true
+        foodBackgroundImageView.layer.borderColor = UIColor.black.cgColor
+        foodBackgroundImageView.layer.borderWidth = 1.0
+        //Setup Spa Background
+        spaBackgroundImageView.layer.cornerRadius = 10.0
+        spaBackgroundImageView.clipsToBounds = true
+        spaBackgroundImageView.layer.borderColor = UIColor.black.cgColor
+        spaBackgroundImageView.layer.borderWidth = 1.0
+    }
+    
+    func setLabelData() {
         if (customer.roomScore == 0) {
             roomLabel.text = missingRoomSurveyText
         }
@@ -47,4 +79,5 @@ class CouponViewController: UIViewController {
             spaLabel.text = surveyCompleteText
         }
     }
+    
 }

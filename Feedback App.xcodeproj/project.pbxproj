@@ -12,6 +12,10 @@
 		DB051A8126405E8800DA0379 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB051A8026405E8800DA0379 /* CouponViewController.swift */; };
 		DB051A852640737800DA0379 /* UpdatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB051A842640737800DA0379 /* UpdatePasswordViewController.swift */; };
 		DB051A8926407C3300DA0379 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB051A8826407C3300DA0379 /* AccountViewController.swift */; };
+		DB051B2726434FE600DA0379 /* WelcomeLoadingBackground.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DB051B2626434FE600DA0379 /* WelcomeLoadingBackground.mp4 */; };
+		DB051B7926446B1F00DA0379 /* HappyEndBackground.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DB051B7826446B1F00DA0379 /* HappyEndBackground.mp4 */; };
+		DB051B7C26459F1D00DA0379 /* SadEndBackground.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DB051B7B26459F1D00DA0379 /* SadEndBackground.mp4 */; };
+		DB051B7F26459F2400DA0379 /* NeutralEndBackground.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DB051B7E26459F2400DA0379 /* NeutralEndBackground.mp4 */; };
 		DBF2AFA0262F7721008C46A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF2AF9F262F7721008C46A9 /* AppDelegate.swift */; };
 		DBF2AFA2262F7721008C46A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF2AFA1262F7721008C46A9 /* SceneDelegate.swift */; };
 		DBF2AFA4262F7721008C46A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF2AFA3262F7721008C46A9 /* ViewController.swift */; };
@@ -41,6 +45,10 @@
 		DB051A8026405E8800DA0379 /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
 		DB051A842640737800DA0379 /* UpdatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewController.swift; sourceTree = "<group>"; };
 		DB051A8826407C3300DA0379 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		DB051B2626434FE600DA0379 /* WelcomeLoadingBackground.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = WelcomeLoadingBackground.mp4; path = ../../../../Downloads/WelcomeLoadingBackground.mp4; sourceTree = "<group>"; };
+		DB051B7826446B1F00DA0379 /* HappyEndBackground.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = HappyEndBackground.mp4; path = ../../../../Downloads/HappyEndBackground.mp4; sourceTree = "<group>"; };
+		DB051B7B26459F1D00DA0379 /* SadEndBackground.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = SadEndBackground.mp4; path = ../../../../Downloads/SadEndBackground.mp4; sourceTree = "<group>"; };
+		DB051B7E26459F2400DA0379 /* NeutralEndBackground.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = NeutralEndBackground.mp4; path = ../../../../Downloads/NeutralEndBackground.mp4; sourceTree = "<group>"; };
 		DBF2AF9C262F7721008C46A9 /* Feedback App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feedback App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF2AF9F262F7721008C46A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBF2AFA1262F7721008C46A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +106,10 @@
 		DBF2AF9E262F7721008C46A9 /* Feedback App */ = {
 			isa = PBXGroup;
 			children = (
+				DB051B2626434FE600DA0379 /* WelcomeLoadingBackground.mp4 */,
+				DB051B7826446B1F00DA0379 /* HappyEndBackground.mp4 */,
+				DB051B7E26459F2400DA0379 /* NeutralEndBackground.mp4 */,
+				DB051B7B26459F1D00DA0379 /* SadEndBackground.mp4 */,
 				DBF2AF9F262F7721008C46A9 /* AppDelegate.swift */,
 				DBF2AFA1262F7721008C46A9 /* SceneDelegate.swift */,
 				DBF2AFA3262F7721008C46A9 /* ViewController.swift */,
@@ -185,8 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF2AFAF262F7722008C46A9 /* LaunchScreen.storyboard in Resources */,
+				DB051B2726434FE600DA0379 /* WelcomeLoadingBackground.mp4 in Resources */,
+				DB051B7C26459F1D00DA0379 /* SadEndBackground.mp4 in Resources */,
+				DB051B7926446B1F00DA0379 /* HappyEndBackground.mp4 in Resources */,
 				DBF2AFAC262F7722008C46A9 /* Assets.xcassets in Resources */,
 				DBF2AFA7262F7721008C46A9 /* Main.storyboard in Resources */,
+				DB051B7F26459F2400DA0379 /* NeutralEndBackground.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

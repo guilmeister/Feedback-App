@@ -12,10 +12,29 @@ class ResetPasswordViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var newPassTextField: UITextField!
     @IBOutlet weak var repeatPassTextField: UITextField!
+    @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var labelBackgroundImageView: UIImageView!
     var resetSuccess : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLabelBorders()
+        setupButtonBorders()
+    }
+    
+    func setupButtonBorders() {
+        //Setup for Reset Button
+        resetButton.layer.cornerRadius = 10.0
+        resetButton.layer.masksToBounds = true
+        resetButton.layer.borderColor = UIColor.black.cgColor
+        resetButton.layer.borderWidth = 1.0
+    }
+    
+    func setupLabelBorders() {
+        labelBackgroundImageView.layer.cornerRadius = 10.0
+        labelBackgroundImageView.clipsToBounds = true
+        labelBackgroundImageView.layer.borderColor = UIColor.black.cgColor
+        labelBackgroundImageView.layer.borderWidth = 1.0
     }
     
     @IBAction func resetButtonClicked(_ sender: Any) {
@@ -65,7 +84,9 @@ class ResetPasswordViewController: UIViewController {
         if (usernameTextField.text == "" || newPassTextField.text == "" ||
                 repeatPassTextField.text == "") {
             //Checks if one or all text fields are left blank by user
-            print("Text field for Username, New Password, and repeat password must not be blank")
+            let alert = UIAlertController(title: "Error", message: "Text field for Username, New Password, and repeat password must not be blank!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             usernameTextField.text = ""
             newPassTextField.text = ""
             repeatPassTextField.text = ""
@@ -73,7 +94,9 @@ class ResetPasswordViewController: UIViewController {
         }
         if (newPassTextField.text != repeatPassTextField.text) {
             //Checks if new password and repeat password have the same value
-            print("New password and Repeat password text field not the same")
+            let alert = UIAlertController(title: "Error", message: "New password and Repeat password text field not the same!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             usernameTextField.text = ""
             newPassTextField.text = ""
             repeatPassTextField.text = ""
@@ -81,7 +104,9 @@ class ResetPasswordViewController: UIViewController {
         }
         if (newPassTextField.text!.count < 4) {
             //Checks if user input for new password is less than minimum 4
-            print("Less than 4 characters, minimum of 4 and maximum of 12 characters allowed in a password")
+            let alert = UIAlertController(title: "Error", message: "Less than 4 characters, minimum of 4 and maximum of 12 characters allowed in a password!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             usernameTextField.text = ""
             newPassTextField.text = ""
             repeatPassTextField.text = ""
@@ -89,7 +114,9 @@ class ResetPasswordViewController: UIViewController {
         }
         if (newPassTextField.text!.count > 12) {
             //Checks if user input for new password is more than maximum 12
-            print("Too many characters, only 12 characters allowed in a password")
+            let alert = UIAlertController(title: "Error", message: "Too many characters, only 12 characters allowed in a password!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             usernameTextField.text = ""
             newPassTextField.text = ""
             repeatPassTextField.text = ""
@@ -97,7 +124,9 @@ class ResetPasswordViewController: UIViewController {
         }
         if (repeatPassTextField.text!.count < 4) {
             //Checks if user input for repeat password is less than minimum 4
-            print("Less than 4 characters, minimum of 4 and maximum of 12 characters allowed in a password")
+            let alert = UIAlertController(title: "Error", message: "Less than 4 characters, minimum of 4 and maximum of 12 characters allowed in a password!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             usernameTextField.text = ""
             newPassTextField.text = ""
             repeatPassTextField.text = ""
@@ -105,7 +134,9 @@ class ResetPasswordViewController: UIViewController {
         }
         if (repeatPassTextField.text!.count > 12) {
             //Checks if user input for repeat password is more than maximum 12
-            print("Too many characters, only 12 characters allowed in a password")
+            let alert = UIAlertController(title: "Error", message: "Too many characters, only 12 characters allowed in a password!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             usernameTextField.text = ""
             newPassTextField.text = ""
             repeatPassTextField.text = ""

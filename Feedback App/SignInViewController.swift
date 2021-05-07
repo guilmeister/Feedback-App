@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SafariServices
 
 class SignInViewController: UIViewController {
 
@@ -14,12 +13,18 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var rememberLabel: UILabel!
     @IBOutlet weak var rememberSwitch: UISwitch!
+    @IBOutlet weak var labelBackgroundImageView: UIImageView!
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var forgotPassButton: UIButton!
     let uDefault = UserDefaults.standard
     var signInSuccess : Bool = false
     static var userIdentifier : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLabelBorders()
+        setupButtonBorders()
         if (uDefault.object(forKey: "switchState") != nil) {
             rememberSwitch.isOn = uDefault.bool(forKey: "switchState")
         }
@@ -31,6 +36,31 @@ class SignInViewController: UIViewController {
         }
     }
 
+    func setupButtonBorders() {
+        //Setup for Sign In Button
+        signInButton.layer.cornerRadius = 10.0
+        signInButton.layer.masksToBounds = true
+        signInButton.layer.borderColor = UIColor.black.cgColor
+        signInButton.layer.borderWidth = 1.0
+        //Setup for Sign Up Button
+        signUpButton.layer.cornerRadius = 10.0
+        signUpButton.layer.masksToBounds = true
+        signUpButton.layer.borderColor = UIColor.black.cgColor
+        signUpButton.layer.borderWidth = 1.0
+        //Setup for Forgot Pass Button
+        forgotPassButton.layer.cornerRadius = 10.0
+        forgotPassButton.layer.masksToBounds = true
+        forgotPassButton.layer.borderColor = UIColor.black.cgColor
+        forgotPassButton.layer.borderWidth = 1.0
+    }
+    
+    func setupLabelBorders() {
+        labelBackgroundImageView.layer.cornerRadius = 10.0
+        labelBackgroundImageView.clipsToBounds = true
+        labelBackgroundImageView.layer.borderColor = UIColor.black.cgColor
+        labelBackgroundImageView.layer.borderWidth = 1.0
+    }
+    
     @IBAction func signInButtonClicked(_ sender: Any) {
         let customerData = DatabaseHelper.inst.fetchData()
         

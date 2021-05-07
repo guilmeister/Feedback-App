@@ -11,9 +11,28 @@ class SignUpViewController: UIViewController {
 
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var labelBackgroundImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLabelBorders()
+        setupButtonBorders()
+    }
+    
+    func setupButtonBorders() {
+        //Setup for Sign Up Button
+        signUpButton.layer.cornerRadius = 10.0
+        signUpButton.layer.masksToBounds = true
+        signUpButton.layer.borderColor = UIColor.black.cgColor
+        signUpButton.layer.borderWidth = 1.0
+    }
+    
+    func setupLabelBorders() {
+        labelBackgroundImageView.layer.cornerRadius = 10.0
+        labelBackgroundImageView.clipsToBounds = true
+        labelBackgroundImageView.layer.borderColor = UIColor.black.cgColor
+        labelBackgroundImageView.layer.borderWidth = 1.0
     }
     
     @IBAction func signUpButtonClicked(_ sender: Any) {
@@ -135,7 +154,6 @@ class SignUpViewController: UIViewController {
         }
         return true
     }
-    
     
     @IBAction func showPassword(_ sender: Any) {
         let passwordSecureState = passwordTextField.isSecureTextEntry
