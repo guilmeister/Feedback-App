@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB051A7A26404E4B00DA0379 /* SadExitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB051A7926404E4B00DA0379 /* SadExitViewController.swift */; };
-		DB051A7D26404E6600DA0379 /* NeutralExitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB051A7C26404E6600DA0379 /* NeutralExitViewController.swift */; };
-		DB051A8126405E8800DA0379 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB051A8026405E8800DA0379 /* CouponViewController.swift */; };
 		DB051A852640737800DA0379 /* UpdatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB051A842640737800DA0379 /* UpdatePasswordViewController.swift */; };
 		DB051A8926407C3300DA0379 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB051A8826407C3300DA0379 /* AccountViewController.swift */; };
-		DB051B2726434FE600DA0379 /* WelcomeLoadingBackground.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DB051B2626434FE600DA0379 /* WelcomeLoadingBackground.mp4 */; };
-		DB051B7926446B1F00DA0379 /* HappyEndBackground.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DB051B7826446B1F00DA0379 /* HappyEndBackground.mp4 */; };
-		DB051B7C26459F1D00DA0379 /* SadEndBackground.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DB051B7B26459F1D00DA0379 /* SadEndBackground.mp4 */; };
-		DB051B7F26459F2400DA0379 /* NeutralEndBackground.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DB051B7E26459F2400DA0379 /* NeutralEndBackground.mp4 */; };
+		DB78654826589A1800AAF71C /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78654726589A1800AAF71C /* ProgressView.swift */; };
+		DB78654A26589AA900AAF71C /* ProgressShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78654926589AA900AAF71C /* ProgressShapeLayer.swift */; };
+		DB78654C26589B4800AAF71C /* StrokeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78654B26589B4800AAF71C /* StrokeAnimation.swift */; };
+		DB78654E26589C5100AAF71C /* RotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78654D26589C5000AAF71C /* RotationAnimation.swift */; };
+		DB78655026589CF400AAF71C /* StrokeColorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78654F26589CF400AAF71C /* StrokeColorAnimation.swift */; };
 		DBF2AFA0262F7721008C46A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF2AF9F262F7721008C46A9 /* AppDelegate.swift */; };
 		DBF2AFA2262F7721008C46A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF2AFA1262F7721008C46A9 /* SceneDelegate.swift */; };
 		DBF2AFA4262F7721008C46A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF2AFA3262F7721008C46A9 /* ViewController.swift */; };
@@ -35,20 +33,16 @@
 		DBF2B20C2639E69C008C46A9 /* FoodSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF2B20B2639E69C008C46A9 /* FoodSurveyViewController.swift */; };
 		DBF2B2102639EB6D008C46A9 /* SpaSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF2B20F2639EB6D008C46A9 /* SpaSurveyViewController.swift */; };
 		DBF2B2132639EC74008C46A9 /* OverallSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF2B2122639EC74008C46A9 /* OverallSurveyViewController.swift */; };
-		DBF2B2162639F34E008C46A9 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF2B2152639F34E008C46A9 /* AdminViewController.swift */; };
-		DBF2B282263CAF4B008C46A9 /* HappyExitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF2B281263CAF4B008C46A9 /* HappyExitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB051A7926404E4B00DA0379 /* SadExitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadExitViewController.swift; sourceTree = "<group>"; };
-		DB051A7C26404E6600DA0379 /* NeutralExitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeutralExitViewController.swift; sourceTree = "<group>"; };
-		DB051A8026405E8800DA0379 /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
 		DB051A842640737800DA0379 /* UpdatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewController.swift; sourceTree = "<group>"; };
 		DB051A8826407C3300DA0379 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
-		DB051B2626434FE600DA0379 /* WelcomeLoadingBackground.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = WelcomeLoadingBackground.mp4; path = ../../../../Downloads/WelcomeLoadingBackground.mp4; sourceTree = "<group>"; };
-		DB051B7826446B1F00DA0379 /* HappyEndBackground.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = HappyEndBackground.mp4; path = ../../../../Downloads/HappyEndBackground.mp4; sourceTree = "<group>"; };
-		DB051B7B26459F1D00DA0379 /* SadEndBackground.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = SadEndBackground.mp4; path = ../../../../Downloads/SadEndBackground.mp4; sourceTree = "<group>"; };
-		DB051B7E26459F2400DA0379 /* NeutralEndBackground.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = NeutralEndBackground.mp4; path = ../../../../Downloads/NeutralEndBackground.mp4; sourceTree = "<group>"; };
+		DB78654726589A1800AAF71C /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		DB78654926589AA900AAF71C /* ProgressShapeLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressShapeLayer.swift; sourceTree = "<group>"; };
+		DB78654B26589B4800AAF71C /* StrokeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeAnimation.swift; sourceTree = "<group>"; };
+		DB78654D26589C5000AAF71C /* RotationAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationAnimation.swift; sourceTree = "<group>"; };
+		DB78654F26589CF400AAF71C /* StrokeColorAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeColorAnimation.swift; sourceTree = "<group>"; };
 		DBF2AF9C262F7721008C46A9 /* Feedback App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feedback App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF2AF9F262F7721008C46A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBF2AFA1262F7721008C46A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,8 +64,6 @@
 		DBF2B20B2639E69C008C46A9 /* FoodSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSurveyViewController.swift; sourceTree = "<group>"; };
 		DBF2B20F2639EB6D008C46A9 /* SpaSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaSurveyViewController.swift; sourceTree = "<group>"; };
 		DBF2B2122639EC74008C46A9 /* OverallSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallSurveyViewController.swift; sourceTree = "<group>"; };
-		DBF2B2152639F34E008C46A9 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
-		DBF2B281263CAF4B008C46A9 /* HappyExitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyExitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,11 +77,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DBF2AF93262F7721008C46A9 = {
+		DB78653D265849EB00AAF71C /* User View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBF2B13526363787008C46A9 /* HomeViewController.swift */,
+				DB051A8826407C3300DA0379 /* AccountViewController.swift */,
+				DB051A842640737800DA0379 /* UpdatePasswordViewController.swift */,
+			);
+			path = "User View Controllers";
+			sourceTree = "<group>";
+		};
+		DB78653E265875BF00AAF71C /* Survey View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBF2B20F2639EB6D008C46A9 /* SpaSurveyViewController.swift */,
+				DBF2B13826368374008C46A9 /* RoomSurveyViewController.swift */,
+				DBF2B1912638BC53008C46A9 /* GymSurveyViewController.swift */,
+				DBF2B20B2639E69C008C46A9 /* FoodSurveyViewController.swift */,
+				DBF2B2122639EC74008C46A9 /* OverallSurveyViewController.swift */,
+			);
+			path = "Survey View Controllers";
+			sourceTree = "<group>";
+		};
+		DB78654026588DE200AAF71C /* Database Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBF2B1212636266E008C46A9 /* DatabaseHelper.swift */,
+			);
+			path = "Database Helper Files";
+			sourceTree = "<group>";
+		};
+		DB7865432658928400AAF71C /* Loading View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBF2AFA3262F7721008C46A9 /* ViewController.swift */,
+			);
+			path = "Loading View Controller";
+			sourceTree = "<group>";
+		};
+		DB7865442658930E00AAF71C /* Circular Loading Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB78654726589A1800AAF71C /* ProgressView.swift */,
+				DB78654926589AA900AAF71C /* ProgressShapeLayer.swift */,
+				DB78654B26589B4800AAF71C /* StrokeAnimation.swift */,
+				DB78654D26589C5000AAF71C /* RotationAnimation.swift */,
+				DB78654F26589CF400AAF71C /* StrokeColorAnimation.swift */,
+			);
+			path = "Circular Loading Files";
+			sourceTree = "<group>";
+		};
+		DBEE1FE82656F678001ECCAD /* Credentials View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBF2B1322636315F008C46A9 /* SignInViewController.swift */,
+				DBF2B11E26362390008C46A9 /* SignUpViewController.swift */,
+				DBF2B13B26374286008C46A9 /* ResetPasswordViewController.swift */,
+			);
+			path = "Credentials View Controllers";
+			sourceTree = "<group>";
+		};
+		DBEE1FE92656F873001ECCAD /* Core Data Models */ = {
 			isa = PBXGroup;
 			children = (
 				DBF2B12D26362DFB008C46A9 /* Customer+CoreDataClass.swift */,
 				DBF2B12E26362DFB008C46A9 /* Customer+CoreDataProperties.swift */,
+			);
+			path = "Core Data Models";
+			sourceTree = "<group>";
+		};
+		DBF2AF93262F7721008C46A9 = {
+			isa = PBXGroup;
+			children = (
 				DBF2AF9E262F7721008C46A9 /* Feedback App */,
 				DBF2AF9D262F7721008C46A9 /* Products */,
 			);
@@ -106,35 +165,20 @@
 		DBF2AF9E262F7721008C46A9 /* Feedback App */ = {
 			isa = PBXGroup;
 			children = (
-				DB051B2626434FE600DA0379 /* WelcomeLoadingBackground.mp4 */,
-				DB051B7826446B1F00DA0379 /* HappyEndBackground.mp4 */,
-				DB051B7E26459F2400DA0379 /* NeutralEndBackground.mp4 */,
-				DB051B7B26459F1D00DA0379 /* SadEndBackground.mp4 */,
 				DBF2AF9F262F7721008C46A9 /* AppDelegate.swift */,
 				DBF2AFA1262F7721008C46A9 /* SceneDelegate.swift */,
-				DBF2AFA3262F7721008C46A9 /* ViewController.swift */,
 				DBF2AFA5262F7721008C46A9 /* Main.storyboard */,
-				DBF2AFAB262F7722008C46A9 /* Assets.xcassets */,
 				DBF2AFAD262F7722008C46A9 /* LaunchScreen.storyboard */,
-				DBF2AFB0262F7722008C46A9 /* Info.plist */,
+				DBF2AFAB262F7722008C46A9 /* Assets.xcassets */,
 				DBF2AFA8262F7721008C46A9 /* Feedback_App.xcdatamodeld */,
-				DBF2B1212636266E008C46A9 /* DatabaseHelper.swift */,
-				DBF2B2152639F34E008C46A9 /* AdminViewController.swift */,
-				DBF2B1322636315F008C46A9 /* SignInViewController.swift */,
-				DBF2B11E26362390008C46A9 /* SignUpViewController.swift */,
-				DBF2B13B26374286008C46A9 /* ResetPasswordViewController.swift */,
-				DBF2B13526363787008C46A9 /* HomeViewController.swift */,
-				DB051A8826407C3300DA0379 /* AccountViewController.swift */,
-				DB051A842640737800DA0379 /* UpdatePasswordViewController.swift */,
-				DB051A8026405E8800DA0379 /* CouponViewController.swift */,
-				DBF2B13826368374008C46A9 /* RoomSurveyViewController.swift */,
-				DBF2B1912638BC53008C46A9 /* GymSurveyViewController.swift */,
-				DBF2B20B2639E69C008C46A9 /* FoodSurveyViewController.swift */,
-				DBF2B20F2639EB6D008C46A9 /* SpaSurveyViewController.swift */,
-				DBF2B2122639EC74008C46A9 /* OverallSurveyViewController.swift */,
-				DBF2B281263CAF4B008C46A9 /* HappyExitViewController.swift */,
-				DB051A7C26404E6600DA0379 /* NeutralExitViewController.swift */,
-				DB051A7926404E4B00DA0379 /* SadExitViewController.swift */,
+				DBF2AFB0262F7722008C46A9 /* Info.plist */,
+				DB78654026588DE200AAF71C /* Database Helper Files */,
+				DB7865442658930E00AAF71C /* Circular Loading Files */,
+				DB7865432658928400AAF71C /* Loading View Controller */,
+				DBEE1FE92656F873001ECCAD /* Core Data Models */,
+				DB78653E265875BF00AAF71C /* Survey View Controllers */,
+				DB78653D265849EB00AAF71C /* User View Controllers */,
+				DBEE1FE82656F678001ECCAD /* Credentials View Controllers */,
 			);
 			path = "Feedback App";
 			sourceTree = "<group>";
@@ -197,12 +241,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF2AFAF262F7722008C46A9 /* LaunchScreen.storyboard in Resources */,
-				DB051B2726434FE600DA0379 /* WelcomeLoadingBackground.mp4 in Resources */,
-				DB051B7C26459F1D00DA0379 /* SadEndBackground.mp4 in Resources */,
-				DB051B7926446B1F00DA0379 /* HappyEndBackground.mp4 in Resources */,
 				DBF2AFAC262F7722008C46A9 /* Assets.xcassets in Resources */,
 				DBF2AFA7262F7721008C46A9 /* Main.storyboard in Resources */,
-				DB051B7F26459F2400DA0379 /* NeutralEndBackground.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,27 +253,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB78655026589CF400AAF71C /* StrokeColorAnimation.swift in Sources */,
 				DBF2AFA4262F7721008C46A9 /* ViewController.swift in Sources */,
 				DBF2B13926368374008C46A9 /* RoomSurveyViewController.swift in Sources */,
-				DB051A7D26404E6600DA0379 /* NeutralExitViewController.swift in Sources */,
-				DB051A7A26404E4B00DA0379 /* SadExitViewController.swift in Sources */,
-				DBF2B2162639F34E008C46A9 /* AdminViewController.swift in Sources */,
-				DB051A8126405E8800DA0379 /* CouponViewController.swift in Sources */,
+				DB78654A26589AA900AAF71C /* ProgressShapeLayer.swift in Sources */,
 				DBF2AFA0262F7721008C46A9 /* AppDelegate.swift in Sources */,
 				DBF2B13C26374286008C46A9 /* ResetPasswordViewController.swift in Sources */,
-				DBF2B282263CAF4B008C46A9 /* HappyExitViewController.swift in Sources */,
 				DBF2B20C2639E69C008C46A9 /* FoodSurveyViewController.swift in Sources */,
 				DB051A852640737800DA0379 /* UpdatePasswordViewController.swift in Sources */,
 				DBF2AFAA262F7721008C46A9 /* Feedback_App.xcdatamodeld in Sources */,
+				DB78654E26589C5100AAF71C /* RotationAnimation.swift in Sources */,
 				DBF2B13026362DFB008C46A9 /* Customer+CoreDataProperties.swift in Sources */,
 				DBF2B1922638BC53008C46A9 /* GymSurveyViewController.swift in Sources */,
 				DBF2AFA2262F7721008C46A9 /* SceneDelegate.swift in Sources */,
 				DBF2B2102639EB6D008C46A9 /* SpaSurveyViewController.swift in Sources */,
+				DB78654C26589B4800AAF71C /* StrokeAnimation.swift in Sources */,
 				DB051A8926407C3300DA0379 /* AccountViewController.swift in Sources */,
 				DBF2B2132639EC74008C46A9 /* OverallSurveyViewController.swift in Sources */,
 				DBF2B13626363787008C46A9 /* HomeViewController.swift in Sources */,
 				DBF2B1332636315F008C46A9 /* SignInViewController.swift in Sources */,
 				DBF2B1222636266E008C46A9 /* DatabaseHelper.swift in Sources */,
+				DB78654826589A1800AAF71C /* ProgressView.swift in Sources */,
 				DBF2B11F26362390008C46A9 /* SignUpViewController.swift in Sources */,
 				DBF2B12F26362DFB008C46A9 /* Customer+CoreDataClass.swift in Sources */,
 			);
