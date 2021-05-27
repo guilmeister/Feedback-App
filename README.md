@@ -5,7 +5,7 @@ Resort Feedback Application collects the feedback from the customers about their
 
 ## Technologies Used
 1. XCode - Version 12.5
-1. Swift - Version 5.0
+2. Swift - Version 5.0
 
 ## Features
 
@@ -25,58 +25,59 @@ Resort Feedback Application collects the feedback from the customers about their
 To get a copy of this project, we can clone this project via Terminal or XCode. I will show you both methods.
 
 ### Cloning via Terminal
-Go to your terminal and go to the directory where you want this project to be saved.
+• Go to your terminal and go to the directory where you want this project to be saved.
 
-Once you are in the location where you want this project to be saved, copy this line and paste it on your terminal 
+• Once you are in the location where you want this project to be saved, copy this line and paste it on your terminal: 
 ```
 git clone https://github.com/guilmeister/Feedback-App
 ```
 
 ### Cloning via XCode
-Once you open XCode you will see this screen
+• Once you open XCode you will see this screen:
  
-![Images](/Images/ExampleXCodeStart.png)
+<img src="/Images/ExampleXCodeStart.png" width=700>
  
-Click on the Clone an Existing Project option and you will see this next screen
+• Click on the Clone an Existing Project option and you will see this next screen:
  
-![Images](/Images/ExampleXCodeClone.png)
+<img src="/Images/ExampleXCodeClone.png" width=700>
  
-Click the search bar and copy this line and paste it on the search bar
+• Click the search bar and copy this line and paste it on the search bar:
 ```
  git clone https://github.com/guilmeister/Feedback-App
 ```
 
 ## Usage
-Once you run the application, a loading screen will appear for 5 seconds and automatically takes you to the Sign In screen.
+• Once you run the application, a loading screen will appear for 5 seconds and automatically takes you to the Sign In screen.
 
-![Images](/Images/ExampleLoad.png)
+<img src="/Images/ExampleLoad.png" width=300>
 
-From here you can Sign In if you have an existing account or click the Sign Up Here button on the lower right side of the Sign In screen if you don't have an account.
+• From here you can Sign In if you have an existing account or click the Sign Up Here button on the lower right side of the Sign In screen if you don't have an account.
 
-![Images](/Images/ExampleSignIn.png)
+<img src="/Images/ExampleSignIn.png" width=300>
 
-If you have an existing account but forgot your password, simply enter your Username, the new Password, and repeat the new password on their respective text fields.
+• If you have an existing account but forgot your password, simply enter your Username, the new Password, and repeat the new password on their respective text fields.
 
-![Images](/Images/ExampleReset.png)
+<img src="/Images/ExampleReset.png" width=300>
 
-Once you Sign In and it is verified, you are taken to the Home Screen where the user have a few options to take. The user can take 5 different feedback categories, manage your account, or log out.
+• Once you Sign In and it is verified, you are taken to the Home Screen where the user have a few options to take. The user can take 5 different feedback categories, manage your account, or log out.
 
-![Images](/Images/ExampleMenu.png)
+<img src="/Images/ExampleMenu.png" width=300>
 
-When you pick a feedback to answer you are taken to that respective feedback questionnaire and go back automatically after you have finished answering.
+• When you pick a feedback to answer you are taken to that respective feedback questionnaire and go back automatically after you have finished answering.
 
-![Images](/Images/ExampleFeedback.png)
+<img src="/Images/ExampleFeedback.png" width=300>
 
-When you press on the Manage Account button, you are taken to the Manage Account screen where you can see your coupon codes for finishing a certain feedback and can either update their password or delete their account.
+• When you press on the Manage Account button, you are taken to the Manage Account screen where you can see your coupon codes for finishing a certain feedback and can either update their password or delete their account.
 
-![Images](/Images/ExampleMyAccount.png)
+<img src="/Images/ExampleMyAccount.png" width=300>
 
-When you press on the Update Password button, you are taken to a similar screen as the Forgot Password screen. On this screen you just have to specify what your new password is and repeat it for the other text field.
+• When you press on the Update Password button, you are taken to a similar screen as the Forgot Password screen. On this screen you just have to specify what your new password is and repeat it for the other text field.
 
-![Images](/Images/ExampleUpdate.png)
+<img src="/Images/ExampleUpdate.png" width=300>
 
-When you press on the Delete Account, it shows a prompt if you are really sure of deleting your account and if you confirm, it will delete the current account from Core Data and switches the screen back to the Sign In screen.
+• When you press on the Delete Account, it shows a prompt if you are really sure of deleting your account and if you confirm, it will delete the current account from Core Data and switches the screen back to the Sign In screen.
 
-![Images](/Images/ExampleDelete.png)
+<img src="/Images/ExampleDelete.png" width=300>
 
 ## License
+This project uses the following [License](https://github.com/guilmeister/Feedback-App/blob/master/LICENSE)
