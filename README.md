@@ -25,10 +25,10 @@ git clone https://github.com/guilmeister/Feedback-App
 
 ### Cloning via XCode
  • Once you open XCode you will see this screen
- /image/ExampleXCodeStart.png
+ /Images/ExampleXCodeStart.png
  
  • Click on the Clone an Existing Project option and you will see this next screen
- /image/ExampleXCodeClone.png
+ /Images/ExampleXCodeClone.png
  
  • Click the search bar and copy this line and paste it on the search bar
 ```
