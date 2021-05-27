@@ -49,34 +49,34 @@ Click the search bar and copy this line and paste it on the search bar
 ## Usage
 Once you run the application, a loading screen will appear for 5 seconds and automatically takes you to the Sign In screen.
 
-![Images](/Images/ExampleLoad)
+![Images](/Images/ExampleLoad.png)
 
 From here you can Sign In if you have an existing account or click the Sign Up Here button on the lower right side of the Sign In screen if you don't have an account.
 
-![Images](/Images/ExampleSignIn)
+![Images](/Images/ExampleSignIn.png)
 
 If you have an existing account but forgot your password, simply enter your Username, the new Password, and repeat the new password on their respective text fields.
 
-![Images](/Images/ExampleReset)
+![Images](/Images/ExampleReset.png)
 
 Once you Sign In and it is verified, you are taken to the Home Screen where the user have a few options to take. The user can take 5 different feedback categories, manage your account, or log out.
 
-![Images](/Images/ExampleMenu)
+![Images](/Images/ExampleMenu.png)
 
 When you pick a feedback to answer you are taken to that respective feedback questionnaire and go back automatically after you have finished answering.
 
-![Images](/Images/ExampleFeedback)
+![Images](/Images/ExampleFeedback.png)
 
 When you press on the Manage Account button, you are taken to the Manage Account screen where you can see your coupon codes for finishing a certain feedback and can either update their password or delete their account.
 
-![Images](/Images/ExampleMyAccount)
+![Images](/Images/ExampleMyAccount.png)
 
 When you press on the Update Password button, you are taken to a similar screen as the Forgot Password screen. On this screen you just have to specify what your new password is and repeat it for the other text field.
 
-![Images](/Images/ExampleUpdate)
+![Images](/Images/ExampleUpdate.png)
 
 When you press on the Delete Account, it shows a prompt if you are really sure of deleting your account and if you confirm, it will delete the current account from Core Data and switches the screen back to the Sign In screen.
 
-![Images](/Images/ExampleDelete)
+![Images](/Images/ExampleDelete.png)
 
 ## License
